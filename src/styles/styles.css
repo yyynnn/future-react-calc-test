@@ -1,0 +1,270 @@
+html {
+        overflow-y: hidden;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+body,
+html {
+    font-family: 'muller';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #969ba1!important;
+    overflow-y: visible 
+}
+
+h1 {
+    color: #9a9fa5!important;
+    font-weight: 800!important;
+    font-size: 24pt!important;
+    margin: 0 0 40px 0!important;
+}
+
+p {
+    margin: 0 0 10px 0!important;
+}
+
+td span #p2Cell {
+    text-align: left!important;
+}
+
+.nav-menu img {
+   margin: 0px 0px 0px 15px;
+    width: 19px;
+    height: 83px;
+}
+
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table tr {
+    transition: 0.2s all ease-in-out;
+}
+
+table th,
+table td {
+    text-align: right;
+}
+
+.table tr:hover {
+    background-color: #fff7e4!important;
+}
+
+
+.table tr:focus {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+}
+
+table th {
+    font-size: 14px;
+}
+
+
+.table-divider {
+    border-right: 3px solid #d4d8df!important;
+}
+
+
+@media screen and (max-width: 810px) {
+    
+    .has-text-left {
+    text-align: right!important;
+    }
+    
+    .table-divider {
+    border-right: 1px solid #d4d8df!important;
+    }
+    
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        padding: 10px;
+        display: block;
+    }
+    table tr:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    table tr:before {
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+    table td {
+        box-sizing: border-box;
+        display: block;
+        float: left;
+        clear: left;
+        width: 100%;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+table td,
+table th {
+    vertical-align: middle!important;
+    font-weight: 500;
+}
+
+input {
+    width: 70%!important;
+}
+
+.logo-link {
+    color: #969ba1;
+}
+
+.is-disabled .button-future {
+    background-color: #c6e0f5!important;
+}
+
+.is-disabled td {
+    color: #9a9fa5!important;
+}
+
+.button-future {
+    font-size: 14px!important;
+    background-color: #4097dc!important;
+    color: white!important;
+    border-radius: 40px!important;
+    padding: 25px 30px 23px 30px!important;
+    border: none!important;
+    font-weight: 500!important;
+    transition: 0.2s all ease-in-out;
+}
+
+.button-future:hover {
+    background-color: #255479!important;
+}
+
+.button-future-inactive {
+    font-size: 14px!important;
+    color: #969BA1;
+    background-color: transparent;
+    border: 1px solid #969BA1;
+    border-radius: 40px!important;
+    padding: 26px 26px 24px 26px!important;
+    font-weight: 500!important;
+    pointer-events: none;
+}
+
+.button-future-margin {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-heading {
+    background-color: #fbfbfd;
+    border-bottom: 2px solid #e7e9ed;
+    border-radius: 4px 4px 0 0;
+    color: #0f0f0f;
+    font-size: 20px;
+    font-weight: 400!important;
+    padding: 20px;
+    margin-top: -40px;
+}
+
+.input,
+.textarea {
+    background-color: #fbfbfd;
+    border: 1px solid #d4d8df;
+    border-radius: 4px;
+    margin: 35px auto;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: 'muller';
+    height: 32px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.002);
+    max-width: 100%;
+    width: 100%;
+    color: #4097dc;
+    font-weight: 600;
+    text-align: center;
+}
+
+.expand-link .icon-contract {
+    display: none;
+}
+
+.expand-link:hover .icon-expand,
+.expand-link:active .icon-expand {
+    display: none;
+}
+
+.expand-link:hover .icon-contract,
+.expand-link:active .icon-contract {
+    display: inherit;
+}
+
+p span {
+    font-weight: 400;
+}
+
+#p1Cell {
+        text-align: left!important;
+    color: #4097dc;
+    font-size: 16px;
+
+}
+
+
+
+#ImgCell {
+    cursor: pointer;
+    text-align: center!important;
+    transition: 0.2s aLL ease-in-out;
+}
+
+#ImgCell:hover {
+    transform: translateZ(0px);
+    transform: scale(1.02);
+}
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.table td .cellTable{
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+ tr .cellTable:focus{
+    box-shadow: none!important;
+    border: 1px solid transparent;
+}
+
+.is-disabled {
+    pointer-events: none;
+    background-color: #fcfcfd;
+}

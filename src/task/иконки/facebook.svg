@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="234px" height="234px" viewBox="0 0 234 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="75" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.250980392   0 0 0 0 0.592156863   0 0 0 0 0.862745098  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="25" cy="25" r="25"></circle>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="Home_enter" transform="translate(-523.000000, -545.000000)">
+            <g id="ОКНО-ВХОДА" filter="url(#filter-1)" transform="translate(408.000000, 186.000000)">
+                <g id="social-copy" transform="translate(142.000000, 451.000000)">
+                    <g id="facebook" transform="translate(65.000000, 0.000000)">
+                        <use id="Oval-10-Copy" stroke="#D4D8DF" mask="url(#mask-3)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-2"></use>
+                        <path d="M29.509,21.5804875 L26.4377861,21.5804875 L26.4377861,19.5662211 C26.4377861,18.8097665 26.9391432,18.6334077 27.2922625,18.6334077 L29.4595874,18.6334077 L29.4595874,15.3078997 L26.4747451,15.2962496 C23.1612889,15.2962496 22.4072447,17.7765209 22.4072447,19.36375 L22.4072447,21.5804875 L20.491,21.5804875 L20.491,25.0072311 L22.4072447,25.0072311 L22.4072447,34.7037504 L26.4377861,34.7037504 L26.4377861,25.0072311 L29.1574876,25.0072311 L29.509,21.5804875 L29.509,21.5804875 Z" id="Shape" fill="#D4D8DF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
