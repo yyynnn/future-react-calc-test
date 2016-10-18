@@ -19,12 +19,7 @@ export default class Section extends React.Component {
                         </div>
                         <Table/>
                     </div>
-                    <div class="columns">
-                        <div class="column">
-                            <a class="button-future-margin button-future button is-medium">Сохранить расчеты</a>
-                            <a class=" button is-medium button-future-inactive">Распечатать</a>
-                        </div>
-                    </div>
+
                 </div>
             </section>
 

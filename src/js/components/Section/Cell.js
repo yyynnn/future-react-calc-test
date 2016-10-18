@@ -24,7 +24,7 @@ export default class Cell extends React.Component {
                 <table style={cellStyle}>
                     <tbody>
                         <tr class="cellTable">
-                            <th class="cellTable" rowSpan="2"><img id="ImgCell" src={'images/close.svg'} onClick={this.props.onClose}/></th>
+                            <th class="cellTable" rowSpan="2"><img class="ImgCell" src={'images/close.svg'} onClick={this.props.onClose}/></th>
                             <th class="cellTable">
                                 <span id="p1Cell">{this.props.newsum}
                                     <div style={roubleSymbol}>{' '}

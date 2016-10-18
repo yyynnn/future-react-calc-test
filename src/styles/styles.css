@@ -2,17 +2,14 @@ html {
         overflow-y: hidden;
 }
 
-.ReactModal__Body--open {
-  overflow: hidden;
-}
 
 body,
 html {
-    font-family: 'muller';
+    font-family: 'muller'!important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #969ba1!important;
-    overflow-y: visible 
+    overflow-y: visible
 }
 
 h1 {
@@ -74,16 +71,36 @@ table th {
 }
 
 
+
+@media screen and (min-width: 811px) {
+  .button-future-inactive{
+left: 120px;
+position: relative;
+}
+}
+
+@media screen and (max-width: 980px) {
+  .button-future-inactive{
+left: 70px;
+}
+}
+
+@media screen and (max-width: 766px) {
+  .button-future-inactive{
+left: 0px;
+}
+}
+
 @media screen and (max-width: 810px) {
-    
+
     .has-text-left {
     text-align: right!important;
     }
-    
+
     .table-divider {
     border-right: 1px solid #d4d8df!important;
     }
-    
+
     table {
         border: 0;
     }
@@ -135,13 +152,10 @@ input {
     color: #969ba1;
 }
 
-.is-disabled .button-future {
+.disabled .button-future {
     background-color: #c6e0f5!important;
 }
 
-.is-disabled td {
-    color: #9a9fa5!important;
-}
 
 .button-future {
     font-size: 14px!important;
@@ -164,14 +178,12 @@ input {
     background-color: transparent;
     border: 1px solid #969BA1;
     border-radius: 40px!important;
-    padding: 26px 26px 24px 26px!important;
+    padding: 25px 30px 23px 30px!important;
     font-weight: 500!important;
     pointer-events: none;
 }
 
 .button-future-margin {
-    margin-right: 20px;
-    margin-bottom: 20px;
 }
 
 .panel-heading {
@@ -236,18 +248,29 @@ p span {
 
 }
 
-
-
-#ImgCell {
+.expand-link{
+  transition: 0.2s aLL ease-in-out;
+}
+.ImgCell.test {
+position: absolute;
+    bottom: 25px;
+    right: 25px;
+  }
+.ImgCell {
     cursor: pointer;
     text-align: center!important;
     transition: 0.2s aLL ease-in-out;
 }
 
-#ImgCell:hover {
+.expand-link:hover, .ImgCell:hover {
     transform: translateZ(0px);
     transform: scale(1.02);
 }
+.expand-link:active, .ImgCell:active {
+    transform: translateZ(0px);
+    transform: scale(1.29);
+}
+
 td img{
     display: block;
     margin-left: auto;
@@ -264,7 +287,8 @@ td img{
     border: 1px solid transparent;
 }
 
-.is-disabled {
+.disabled {
     pointer-events: none;
     background-color: #fcfcfd;
+    color: #9a9fa5!important;
 }

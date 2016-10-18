@@ -14,6 +14,9 @@ export default class TableRow extends React.Component {
             Comment: 1
         };
     }
+
+
+
     openModal() {
         this.setState({isModalOpen: true, originalBodyOverflow: document.body.style.overflowY});
         document.body.style.overflowY = 'hidden';
@@ -82,8 +85,7 @@ export default class TableRow extends React.Component {
 
         const closeModalStyle = {
             position: "relative",
-            top: "-60px",
-            pointerEvents: "none"
+            top: "-60px"
         };
 
         const roubleInputIconStyle = {
@@ -99,13 +101,13 @@ export default class TableRow extends React.Component {
 
             <div>
                 <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
-                    <img style={closeModalStyle} src={'images/close_modal.svg'}/>
+                    <img style={closeModalStyle} class="ImgCell" src={'images/close_modal.svg'} onClick={() => this.closeModal()}/>
                     <div class="panel-heading">
                         <span>Сумма платежа</span>
                     </div>
                     <div>
                         <span class="currencyinput">
-                            <input ref="newsum" class="input is-medium" type="number" placeholder="Введите сумму"></input>
+                            <input ref="newsum" class="input is-medium" type="number" placeholder="Введите сумму" min={1} max={900000000} maxLength={10}></input>
                             <div style={roubleInputIconStyle}>
                                 <del>
                                     <span >P
@@ -141,7 +143,7 @@ export default class TableRow extends React.Component {
 
             return (
 
-                <tr tabIndex="-1">
+                <tr tabIndex="1">
                     <td class="has-text-centered" data-label="#">{this.rownumb()}</td>
                     <td class="table-divider has-text-left" data-label="Дата">
                         <span>{this.monthyear()}</span>
@@ -153,7 +155,6 @@ export default class TableRow extends React.Component {
                     <td data-label="Платеж">{this.sum()}<Rouble/></td>
                     <td data-label="">{cell}</td>
                 </tr>
-
             );
         }
     }
