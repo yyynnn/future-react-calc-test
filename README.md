@@ -4,5 +4,5 @@
 Написано на react+jsx+es6+webpack(plugins).
 Настройки для вебпака имеются, исходники тоже.
 
-прямая ссылка на превью
+прямая ссылка на превью. таблица адаптивна
 https://yyynnn.github.io/future-react-calc-test/src/index.html
