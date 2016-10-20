@@ -89,10 +89,15 @@ left: 70px;
   .button-future-inactive{
 left: 0px;
 }
+        .input {
+                font-size: 14px;
+        }
 }
 
 @media screen and (max-width: 810px) {
 
+        
+        
     .has-text-left {
     text-align: right!important;
     }
