@@ -89,7 +89,7 @@ left: 70px;
   .button-future-inactive{
 left: 0px;
 }
-        .input {
+        .input.is-medium, .textarea.is-medium {
                 font-size: 14px;
         }
 }
